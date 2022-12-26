@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div>
+  <main
+    class="max-w-3/4 mx-auto"
+  >
+    <h1
+      class="text-4xl font-bold"
+    >
+      Hello World
+    </h1>
+  </main>
+</div>
+`;

@@ -1,0 +1,33 @@
+<svg width="47.646" height="46.888" viewBox="0 0 47.646 46.888" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(.127)">
+        <circle cx="23.444" cy="23.444" r="23.444" fill="#e4e8ed"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L0 23.722"
+              transform="translate(.373 14.319)"/>
+        <path fill="#fff" stroke="#3b5b7a" stroke-miterlimit="10"
+              d="M3.684 34.162h8.211l4.619 4.619h17.962V17.74h-2.395v-3.079h-20.87l-3.25 3.25-4.3-.028z"/>
+        <path fill="#fff" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0H3.764V16.309H0z"
+              transform="translate(3.68 17.853)"/>
+        <path fill="#fff" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0H4.448V19.729H0z"
+              transform="translate(34.359 18.423)"/>
+        <path fill="#fff" stroke="#3b5b7a" stroke-miterlimit="10"
+              d="M47.019 32.849a2.567 2.567 0 01-2.566 2.566h0c-1.418 0-2.566.4-2.566-1.015l-.12-15.96c0-1.416 1.269-1.158 2.686-1.158h0a2.567 2.567 0 012.566 2.566z"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L2.281 0"
+              transform="translate(39.149 23.783)"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L2.15 0"
+              transform="translate(39.262 27.775)"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L0 3.308"
+              transform="translate(24.551 11.353)"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L0 2.624"
+              transform="translate(21.129 11.353)"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L2.624 0"
+              transform="translate(.741 24.12)"/>
+        <path fill="#bcd2f1" stroke="#3b5b7a" stroke-miterlimit="10" d="M0 0L2.624 0"
+              transform="translate(.741 27.955)"/>
+        <path fill="#fff" stroke="#3b5b7a" stroke-miterlimit="10"
+              d="M30.254 10.15c0 1.259-1.022.973-2.281.973H16.76c-1.259 0-1.1-1.021-1.1-2.28h0a2.28 2.28 0 012.28-2.281h10.037a2.282 2.282 0 012.281 2.281z"/>
+        <path fill="#3b5b7a" d="M0 0H10.954V1.369H0z" transform="translate(13.021 16.381)"/>
+        <path fill="#3b5b7a" d="M0 0H2.009V1.369H0z" transform="translate(24.887 16.381)"/>
+        <path fill="#3b5b7a" d="M0 0H10.954V1.369H0z" transform="translate(21.15 35.386)"/>
+        <path fill="#3b5b7a" d="M0 0H2.009V1.369H0z" transform="translate(18.229 35.386)"/>
+    </g>
+</svg>

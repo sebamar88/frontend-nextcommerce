@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.idea/
+*.log
+.env
+logs.txt
+.DS_Store
+.eslintcache
+.next
+reports
+.npmrc
+tsconfig.tsbuildinfo
+
+# Ignore large directories generated from lcov coverage reporter.
+lcov-report
+clover.xml
+coverage-final.json

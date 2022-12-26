@@ -1,0 +1,11 @@
+{
+    "discord.enabled": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+}

@@ -1,0 +1,67 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:testing-library/react",
+    "plugin:sonarjs/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "testing-library",
+    "sonarjs"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "arrow-body-style": "error",
+    "import/no-anonymous-default-export": "warn",
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-boolean-value": ["error", "never"],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+
+    "jsx-a11y/alt-text": [
+      "warn",
+      {
+        "elements": [
+          "img"
+        ],
+        "img": [
+          "Image"
+        ]
+      }
+    ],
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-proptypes": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/no-onchange": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+
+    "sonarjs/no-nested-template-literals": "warn",
+    "sonarjs/cognitive-complexity": "warn",
+    "sonarjs/no-duplicate-string": "warn",
+    "sonarjs/no-identical-functions": "warn",
+    "sonarjs/no-use-of-empty-return-value": "warn",
+    "sonarjs/no-inverted-boolean-check": "warn",
+    "sonarjs/no-gratuitous-expressions": "warn",
+    "sonarjs/prefer-immediate-return": "warn",
+    "sonarjs/no-one-iteration-loop": "warn",
+    "sonarjs/no-all-duplicated-branches": "warn",
+    "sonarjs/prefer-single-boolean-return":"warn",
+    "sonarjs/no-redundant-boolean": "warn",
+    "sonarjs/no-collapsible-if": "warn",
+    "sonarjs/no-unused-collection": "warn",
+    "@next/next/no-document-import-in-page": "warn"
+  },
+  "ignorePatterns": [
+    "builder"
+  ]
+}

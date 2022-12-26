@@ -1,0 +1,154 @@
+@tailwind base;
+
+@layer base {
+	/* old-theme variables */
+	:root {
+		--primary: 0, 82, 203; /* rgb(0, 82, 203) */
+		--heading: 7, 21, 43; /* rgb(7, 21, 43) */
+		--link: 52, 134, 250 /*rgb(52, 134, 250)*/;
+		--cta: 0, 82, 203; /* rgb(0, 82, 203) */
+		--cta-hover: 0, 82, 203; /* rgb(0, 82, 203) */
+		--cta-focus: 0, 82, 203; /* rgb(0, 82, 203) */
+		--cta-disabled: 198, 199, 207; /* rgb(198,199,207) */
+		--accent: 255, 127, 86; /* rgb(255,127,86) */
+		--primary-text: 95, 100, 122; /* rgb(95, 100, 122) */
+		--secondary-text: 141, 144, 160; /* rgb(141, 144, 160) */
+		--error: 255, 86, 86; /* rgb(255, 86, 86, 1) */
+		--gray-200: 237, 242, 247; /* rgb(237, 242, 247) */
+		--gray-600: 113, 128, 150; /* rgb(113, 128, 150) */
+		--gray-800: 45, 55, 72; /* rgb(45, 55, 72) */
+	}
+
+	/* new theme variables */
+	.new-theme {
+		--primary: 27, 33, 65; /* rgb(27, 33, 65, 1) */
+		--heading: 27, 33, 65; /* rgb(27, 33, 65, 1) */
+		--link: 86, 109, 237; /* rgb(86, 109, 237) */
+		--cta: 86, 109, 237; /* rgb(86,109,237) */
+		--wp: 86, 109, 237; /* rgb(86,109,237) */
+		--cta-hover: 68, 86, 185; /* rgb(68,86,185) */
+		--wp-hover: 68, 86, 185; /* rgb(68,86,185) */
+		--cta-focus: 51, 63, 134; /* rgb(51,63,134) */
+		--cta-disabled: 198, 199, 207; /* rgb(198,199,207) */
+		--accent: 255, 127, 86; /* rgb(255,127,86) */
+		--primary-text: 95, 100, 122; /* rgb(95, 100, 122) */
+		--secondary-text: 141, 144, 160; /* rgb(141, 144, 160) */
+		--error: 255, 86, 86; /* rgb(255, 86, 86, 1) */
+		--gray-200: 242, 243, 248; /* rgb(242, 243, 248) */
+		--gray-600: 135, 138, 157; /* rgb(135, 138, 157) */
+		--gray-800: 203, 204, 237; /* rgb(203, 204, 237) */
+	}
+}
+
+@layer utilities {
+	.text-gradient {
+		background-clip: text;
+
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+img {
+	display: inline;
+	max-width: initial;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.\? {
+	animation: \?wobble0.5sease-in-out alternate infinite;
+}
+
+@keyframes \?wobble {
+	0% {
+		box-shadow:
+			inset 4px 4px rgb(236, 15, 170),
+			inset -4px -4px rgb(236, 15, 170);
+	}
+
+	100% {
+		box-shadow:
+			inset 8px 8px rgb(236, 15, 170),
+			inset -8px -8px rgb(236, 15, 170);
+	}
+}
+
+@layer components {
+	[type="text"],
+	[type="email"],
+	[type="url"],
+	[type="password"],
+	[type="number"],
+	[type="date"],
+	[type="datetime-local"],
+	[type="month"],
+	[type="search"],
+	[type="tel"],
+	[type="time"],
+	[type="week"],
+	[multiple],
+	textarea,
+	select {
+		@apply w-full px-3 py-2 font-normal border border-gray-300 border-solid rounded;
+	}
+
+	[type="text"]:focus,
+	[type="email"]:focus,
+	[type="url"]:focus,
+	[type="password"]:focus,
+	[type="number"]:focus,
+	[type="date"]:focus,
+	[type="datetime-local"]:focus,
+	[type="month"]:focus,
+	[type="search"]:focus,
+	[type="tel"]:focus,
+	[type="time"]:focus,
+	[type="week"]:focus,
+	[multiple]:focus,
+	textarea:focus,
+	select:focus {
+		@apply ring-4 ring-blue-400 ring-opacity-25;
+	}
+
+	.button {
+		@apply flex w-max items-center justify-center rounded-full py-3 px-1 text-center text-sm font-bold transition-colors md:px-3.5 lg:px-8 xl:text-base;
+	}
+
+	.content-grid {
+		@apply grid items-center w-full max-w-screen-xl grid-cols-12 gap-1 mx-auto sm:gap-2 lg:gap-4;
+	}
+
+	.main-container {
+		@apply m-auto max-w-[1280px] px-[15px] sm:px-[24px] lg:px-0;
+	}
+
+	.gradient-text {
+		@apply text-transparent bg-gradient-to-r from-cta to-orange-400 box-decoration-clone bg-clip-text;
+	}
+}
+
+@layer utilities {
+	.grid-brands {
+		grid-template-rows: repeat(auto-fill, minmax(85px, 125px));
+		grid-template-columns: repeat(5, minmax(78px, 90px));
+	}
+
+	.grid-brands-sm {
+		grid-template-rows: repeat(auto-fill, minmax(85px, 125px));
+		grid-template-columns: repeat(4, minmax(72px, 95px));
+	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+}
